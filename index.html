@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkz - Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.youtube.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <div style="position: absolute; width: 0; height: 0; overflow: hidden; opacity: 0; pointer-events: none;">
+        <div id="yt-player"></div>
+    </div>
+
+    <!-- Mouse Glow -->
+    <div class="mouse-glow"></div>
+
+    <div id="audio-control" class="audio-control">
+        <svg id="icon-sound-off" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+        <svg id="icon-sound-on" style="display: none;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+    </div>
+
+    <div id="blur-overlay">
+        <div class="spinner"></div>
+    </div>
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">Darkz Profiles</div>
+            <div class="nav-links">
+                <a href="#" class="nav-item active">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    Home
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div id="content">
+        <header class="glass-header">
+            <div class="avatar-container">
+                <img src="avatar.png" alt="darkz avatar" class="avatar" loading="lazy">
+            <div class="status-indicator dnd"></div>
+        </div>
+            <div class="profile-info">
+                <h1>Lê Chí Thiện - Darkz</h1>
+                <p class="subtitle">Hello! Mình là Darkz, Một sinh viên tại trường TCKT Bình Dương đã và đang tìm hiểu về mảng IT kiêm luôn Designer rất mong sự hổ trợ của mọi người!</p>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                        TCKT Bình Dương
+                    </div>
+                    <div class="meta-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        TP.HCM, Việt Nam
+                    </div>
+                </div>
+                <div class="profile-links">
+                    <a href="https://discord.gg/WEUfaysqsA" target="_blank" class="link-btn primary">
+                        <svg width="16" height="16" viewBox="0 0 127.14 96.36" fill="currentColor"><path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.31,60,73.31,53s5-12.74,11.43-12.74S96.36,46,96.25,53,91.2,65.69,84.69,65.69Z"/></svg>
+                        Valo City
+                    </a>
+                    <a href="https://github.com/Darkzisriel" target="_blank" class="link-btn">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                        GitHub
+                    </a>
+                    <a href="javascript:void(0)" class="link-btn" id="copy-email" data-email="darkz09213@gmail.com">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                           <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                           <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h2 class="section-title reveal-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+                Học vấn
+            </h2>
+            <div class="edu-card reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                <div class="edu-track">
+                    <div class="edu-progress"></div>
+                    <div class="edu-step completed"></div>
+                    <div class="edu-step current"></div>
+                    <div class="edu-step"></div>
+                </div>
+                <div class="edu-labels">
+                    <span class="edu-label completed">THCS</span>
+                    <span class="edu-label current">THPT</span>
+                    <span class="edu-label">ĐH</span>
+                </div>
+            </div>
+
+            <h2 class="section-title reveal-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                Sở thích
+            </h2>
+            <div class="projects-grid">
+                <div class="hobby-card reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <img src="sothich-game.png" alt="Sở thích Phím cơ" class="hobby-img" loading="lazy">
+                    <h3>Chơi Game</h3>
+                    <p style="margin-bottom: 0;">Thích chơi game cùng với những người anh em.</p>
+                </div>
+                <div class="hobby-card reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <img src="sothich-you.png" alt="Sở thích Phím cơ" class="hobby-img" loading="lazy">
+                    <h3>Nói Chuyện</h3>
+                    <p style="margin-bottom: 0;">Thích nói chuyện với bạn bè và đặc biệt là cô ấy.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title reveal-item">
+                <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor" stroke="none"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path></svg>
+                GitHub Streak
+            </h2>
+            <div class="github-streak-container reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                <img src="https://github-readme-streak-stats.herokuapp.com/?user=Darkzisriel&theme=dark&hide_border=true&background=transparent&ring=5865F2&fire=F47FFF&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=a0a0b0&sideLabels=a0a0b0&dates=a0a0b0" alt="GitHub Streak" class="github-streak-img" loading="lazy">
+            </div>
+
+            <h2 class="section-title reveal-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                Projects
+            </h2>
+            <div class="projects-grid">
+                <a href="https://pornhub.com" target="_blank" class="card reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <h3>Darkz Raider</h3>
+                    <p>Darkz Raider là 1 trong những dự án thành công nhất của mình, với khả năng bypass nhiều bot antiraid kể cả premium của wickbot.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Javascript</span>
+                        <span class="tag">Html UI</span>
+                    </div>
+                    <div class="card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                </a>
+                <a href="https://pornhub.com" target="_blank" class="card reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <h3>Dark UI</h3>
+                    <p>Dark UI là một ui library của mình, được mình chính tay design dựa trên idea của luxury ui và hoho hub ui.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Lua</span>
+                        <span class="tag">Roblox UI</span>
+                    </div>
+                    <div class="card-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                    </div>
+                </a>
+            </div>
+            <h2 class="section-title reveal-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                Kinh nghiệm & Kỹ năng
+            </h2>
+            <div class="experience-grid">
+                <div class="exp-card java reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <h3>Javascript</h3>
+                    <div class="exp-tree">
+                        <div class="tree-line">+ C2 Ddos</div>
+                        <div class="tree-line">+ Web backend</div>
+                        <div class="tree-line">+ Discord bot</div>
+                        <div class="tree-line">+ Captcha solver</div>
+                    </div>
+                </div>
+                <div class="exp-card python reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <h3>Python</h3>
+                    <div class="exp-tree">
+                        <div class="tree-line">+ Discord.py</div>
+                        <div class="tree-line">+ Web backend</div>
+                        <div class="tree-line">+ CLI app</div>
+                        <div class="tree-line">+ Scapy / socket programming / fuzzing</div>
+                        <div class="tree-line">+ AI / ML basics (PyTorch)</div>
+                    </div>
+                </div>
+                <div class="exp-card mc reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <h3>Php</h3>
+                    <div class="exp-tree">
+                        <div class="tree-line">+ Banking API</div>
+                        <div class="tree-line">+ Callback API</div>
+                    </div>
+                </div>
+                <div class="exp-card os reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <h3>OS / Env</h3>
+                    <div class="exp-tree">
+                        <div class="tree-line">+ Arch Linux</div>
+                        <div class="tree-line">+ NixOS</div>
+                        <div class="tree-line">+ Kali Linux</div>
+                        <div class="tree-line">+ Windows</div>
+                    </div>
+                </div>
+                <div class="exp-card other reveal-item" data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                    <h3>Other</h3>
+                    <div class="exp-tree">
+                        <div class="tree-line">+ Reverse engineering basics</div>
+                        <div class="tree-line">+ Protocol fuzzing / testing frameworks</div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="section-title reveal-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"></path><path d="M12 20V4"></path><path d="M6 20v-6"></path></svg>
+                Code Stats 2025^^
+            </h2>
+            <div class="line-stats-card reveal-item" data-tilt data-tilt-max="3" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.1">
+                <div class="stat-line-wrapper" style="--color: var(--primary); --percent: 80%;">
+                    <div class="stat-line-info">
+                        <span>Python <span class="stat-line-desc">Ngôn ngữ chủ lực</span></span>
+                        <span>&gt;320h</span>
+                    </div>
+                    <div class="stat-line-bg">
+                        <div class="stat-line-fill"></div>
+                    </div>
+                </div>
+                <div class="stat-line-wrapper" style="--color: var(--java-color); --percent: 50%;">
+                    <div class="stat-line-info">
+                        <span>Javascript <span class="stat-line-desc">Ngôn ngữ phụ</span></span>
+                        <span>&gt;200h</span>
+                    </div>
+                    <div class="stat-line-bg">
+                        <div class="stat-line-fill"></div>
+                    </div>
+                </div>
+                <div class="stat-line-wrapper" style="--color: var(--accent); --percent: 5%;">
+                    <div class="stat-line-info">
+                        <span>Html&Css <span class="stat-line-desc">Giao diện web</span></span>
+                        <span>&lt;3h</span>
+                    </div>
+                    <div class="stat-line-bg">
+                        <div class="stat-line-fill"></div>
+                    </div>
+                </div>
+                <div class="stat-line-wrapper" style="--color: var(--bash-color); --percent: 20%;">
+                    <div class="stat-line-info">
+                        <span>PHP <span class="stat-line-desc">Web</span></span>
+                        <span>~40h</span>
+                    </div>
+                    <div class="stat-line-bg">
+                        <div class="stat-line-fill"></div>
+                    </div>
+                </div>
+                <div class="hover-hint">Hover to view details</div>
+            </div>
+
+            <h2 class="section-title reveal-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+                Tool box!
+            </h2>
+            <div class="lang-grid">
+                <div class="lang-card reveal-item" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" style="--color: var(--primary); --percent: 70;">
+                    <div class="circle-container">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="circle-progress" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <div class="default-icon">PC</div>
+                        <div class="circle-text">
+                            <span class="hours">70%</span>
+                            <span class="label">Sử dụng</span>
+                        </div>
+                    </div>
+                    <div class="lang-name">PyCharm</div>
+                    <div class="lang-desc">Python IDE</div>
+                </div>
+                <div class="lang-card reveal-item" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" style="--color: var(--java-color); --percent: 25;">
+                    <div class="circle-container">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="circle-progress" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <div class="default-icon">IJ</div>
+                        <div class="circle-text">
+                            <span class="hours">25%</span>
+                            <span class="label">Sử dụng</span>
+                        </div>
+                    </div>
+                    <div class="lang-name">IDA PRO</div>
+                    <div class="lang-desc">IDA</div>
+                </div>
+                <div class="lang-card reveal-item" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" style="--color: var(--mc-color); --percent: 3;">
+                    <div class="circle-container">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="circle-progress" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <div class="default-icon">NV</div>
+                        <div class="circle-text">
+                            <span class="hours">3%</span>
+                            <span class="label">Sử dụng</span>
+                        </div>
+                    </div>
+                    <div class="lang-name">Neovim</div>
+                    <div class="lang-desc">CLI Editor</div>
+                </div>
+                <div class="lang-card reveal-item" data-tilt data-tilt-max="8" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" style="--color: var(--os-color); --percent: 2%;">
+                    <div class="circle-container">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                            <circle class="circle-progress" cx="50" cy="50" r="40"></circle>
+                        </svg>
+                        <div class="default-icon">VS</div>
+                        <div class="circle-text">
+                            <span class="hours">10%</span>
+                            <span class="label">Sử dụng</span>
+                        </div>
+                    </div>
+                    <div class="lang-name">VS Code</div>
+                    <div class="lang-desc">Code Editor</div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
+<footer class="glass-footer reveal-item">
+    <div class="footer-content">
+        <p>© 2025 - 2026 <span>Lê Chí Thiện</span>. All Rights Reserved.</p>
+        <div class="footer-bottom-line"></div>
+    </div>
+</footer>
