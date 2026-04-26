@@ -180,14 +180,14 @@ function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
         height: '0',
         width: '0',
-        videoId: 'yTQcgZ9Q-tM',
+        videoId: 'CyC3i1tsoPE',
         playerVars: {
             'autoplay': 0,
             'controls': 0,
             'showinfo': 0,
             'rel': 0,
             'loop': 1,
-            'playlist': 'yTQcgZ9Q-tM'
+            'playlist': 'CyC3i1tsoPE'
         },
         events: {
             'onReady': onPlayerReady
